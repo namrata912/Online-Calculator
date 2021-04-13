@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <title>Calculator</title>
+        <link rel="stylesheet" href="./Cal.css">
+    </head>
+    <body>
+        <h1>
+           Online Calculator 
+        </h1>
+        <h2>
+            By Namrata Santra
+        </h2>
+    </body>
+    <form name="Form" class="calci" action="Calculator.html" method="POST">
+<input type="text" name="answer" id="display">
+<br>
+    </br>
+<input type="button" class="btnDesign" value="C" onclick="Form.answer.value=''">
+<input type="button" class="btnDesign" value="<" onclick="Form.answer.value=Form.answer.value.substring(0,Form.answer.value.length*1-1)">
+<input type="button" class="btnDesign" value="00" onclick="Form.answer.value+='00'">
+<input type="button" class="operatorDesign" value="/" onclick="Form.answer.value+='/'">
+<br>
+<br>
+<input type="button" class="btnDesign" value="7" onclick="Form.answer.value+='7'">
+<input type="button" class="btnDesign" value="8" onclick="Form.answer.value+='8'">
+<input type="button" class="btnDesign" value="9" onclick="Form.answer.value+='9'">
+<input type="button" class="operatorDesign" value="*" onclick="Form.answer.value+='*'">
+<br>
+</br>
+<input type="button" class="btnDesign" value="4" onclick="Form.answer.value+='4'">
+<input type="button" class="btnDesign" value="5" onclick="Form.answer.value+='5'">
+<input type="button" class="btnDesign" value="6" onclick="Form.answer.value+='6'">
+<input type="button" class="operatorDesign" value="-" onclick="Form.answer.value+='-'">
+<br>
+</br>
+<input type="button" class="btnDesign" value="1" onclick="Form.answer.value+='1'">
+<input type="button" class="btnDesign" value="2" onclick="Form.answer.value+='2'">
+<input type="button" class="btnDesign" value="3" onclick="Form.answer.value+='3'">
+<input type="button" class="operatorDesign" value="+" onclick="Form.answer.value+='+'">
+<br>
+</br>
+<input type="button" id="zero" value="0" onclick="Form.answer.value+='0'">
+<input type="button" class="btnDesign" value="." onclick="Form.answer.value+='.'">
+<input type="button" class="operatorDesign" value="=" onclick="Form.answer.value=eval(Form.answer.value)">
+</form>
+</html>
